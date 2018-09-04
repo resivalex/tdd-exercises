@@ -1,7 +1,5 @@
 # Test exercises for practicing TDD
 
-- [Counter](#counter)
-
 
 
 # Counter
@@ -14,8 +12,8 @@ Counter is a simple web app that is used to increment and decrement a number.
 * **WHEN** a user clicks the Decrement button then the number **SHOULD** decrement by one.
 
 
-***Note:** Number is **predefined***\
-***Note:** ReactJS & HTML, Test Driven Development (Jasmine, Jest, Ava), Google ok. No CSS*
+***Note:** Initial number is **predefined***\
+***Note:** ReactJS & HTML, Test Driven Development (Jasmine, Jest, Ava). No CSS*
 
 **Acceptance Criteria:**
 * A test suit **SHOULD** check for basic functionality
@@ -29,7 +27,7 @@ Counter is a simple web app that is used to increment and decrement a number.
 * **WHEN** a user clicks the Decrement button then the number **SHOULD** decrement by one.
 
 ***Note:** Initial value SHOULD come from a mocked backend API.*\
-***Note:** ReactJS & HTML, Test Driven Development (Jasmine, Jest, Ava), Google ok.*
+***Note:** ReactJS & HTML, Test Driven Development (Jasmine, Jest, Ava)*
 
 **Acceptance Criteria:**
 * A test suit **SHOULD** check for basic functionality
@@ -44,10 +42,9 @@ Counter is a simple web app that is used to increment and decrement a number.
 * **WHEN** a user clicks the Randomize button then the number **SHOULD** be replaced by a random number.
 
 ***Note:** Initial value SHOULD come from a mocked backend API.*\
-***Note:** ReactJS & HTML, Test Driven Development (Jasmine, Jest, Ava), Google ok.*
+***Note:** ReactJS & HTML, Test Driven Development (Jasmine, Jest, Ava)*
 
 **Acceptance Criteria:**
 * A test suit **SHOULD** check for basic functionality
 * A test suit **SHOULD** check for mocked number functionality
-* A test suit **SHOULD** check for ransomizer functionality
- 
+* A test suit **SHOULD** check for randomizer functionality
