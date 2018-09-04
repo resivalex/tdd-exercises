@@ -48,3 +48,21 @@ Counter is a simple web app that is used to increment and decrement a number.
 * A test suit **SHOULD** check for basic functionality
 * A test suit **SHOULD** check for mocked number functionality
 * A test suit **SHOULD** check for randomizer functionality
+
+## Stage D
+######_(Optional)_
+
+* **WHEN** a user clicks the Increment button then the number **SHOULD** increment by one.
+* **WHEN** a user clicks the Decrement button then the number **SHOULD** decrement by one.
+* **WHEN** a user clicks the Randomize button then the number **SHOULD** be replaced by a random number.
+* **WHEN** a user clicks on the + button another counter with the same functionality **SHOULD** be added
+
+***Note:** Initial values SHOULD come from a mocked backend API.*\
+***Note:** ReactJS & HTML, Test Driven Development (Jasmine, Jest, Ava)*
+***Note:** Data management libraries (Redux, mobx) **can** be added*
+
+**Acceptance Criteria:**
+* A test suit **SHOULD** check for basic functionality
+* A test suit **SHOULD** check for mocked number functionality
+* A test suit **SHOULD** check for randomizer functionality
+* A test suit **SHOULD** check for adding counter functionality
