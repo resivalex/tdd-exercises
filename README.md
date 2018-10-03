@@ -1,3 +1,10 @@
+# How to run
+
+```
+yarn start
+yarn test
+```
+
 # Test exercises for practicing TDD
 
 
