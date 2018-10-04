@@ -10,8 +10,9 @@ export default class Counter extends Component {
   render() {
     return <div>
       <button onClick={() => this.setState({ value: this.state.value - 1 })}>Decrement</button>
-      <span>{this.state.value}</span>
       <button onClick={() => this.setState({ value: this.state.value + 1 })}>Increment</button>
+      <button onClick={() => this.setState({ value: Math.floor(Math.random() * 1e6) })}>Randomize</button>
+      <span>{this.state.value}</span>
     </div>
   }
 }
