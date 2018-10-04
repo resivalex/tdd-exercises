@@ -10,8 +10,8 @@ function request(url) {
   })
 } 
 
-export default function retrieveInitialValue() {
+export default function retrieveInitialValue(index) {
   return new Promise((resolve) => {
-    resolve(15)
+    resolve(3 * index + 15)
   })
 }

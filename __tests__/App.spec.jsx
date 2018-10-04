@@ -19,3 +19,27 @@ test('Gets initial value from backend', (done) => {
     }
   }, 100)
 })
+
+test('Adds new counter', (done) => {
+  const wrapper = mount(<App />)
+  setTimeout(() => {
+    try {
+      wrapper.update()
+      expect(wrapper.find('span').text()).toBe('15')
+      const addButton = wrapper.findWhere((e) => e.type() === 'button' && e.text() === 'Add Counter')
+      addButton.simulate('click')
+      setTimeout(() => {
+        wrapper.update()
+        expect(wrapper.find('span').last().text()).toBe('18')
+        addButton.simulate('click')
+        setTimeout(() => {
+          wrapper.update()
+          expect(wrapper.find('span').last().text()).toBe('21')
+          done()
+        }, 100)
+      }, 100)
+    } catch (e) {
+      done.fail(e)
+    }
+  }, 100)
+})

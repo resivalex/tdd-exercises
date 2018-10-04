@@ -10,10 +10,14 @@ function request(url) {
   })
 } 
 
-export default function retrieveInitialValue() {
-  return new Promise((resolve) => {
-    request('/counter.json').then((data) => {
-      resolve(JSON.parse(data).value)
+export default function retrieveInitialValue(index) {
+  return new Promise((resolve, reject) => {
+    request(`/counters/${index}.json`).then((data) => {
+      try {
+        resolve(JSON.parse(data).value)
+      } catch (e) {
+        reject(e)
+      }
     })
   })
 }
