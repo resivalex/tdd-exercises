@@ -17,24 +17,29 @@ export default class App extends Component {
   render() {
     const { values, isLoading } = this.state
 
-    return <Fragment>
-      {_.map(values, (value, index) => {
-        return <Counter key={index} initial={value} />
-      })}
-      {!isLoading && <button onClick={() => this.addCounter()}>Add Counter</button>}
-    </Fragment>
+    return (
+      <Fragment>
+        {_.map(values, (value, index) => {
+          return <Counter key={index} initial={value} />
+        })}
+        {!isLoading && <button onClick={() => this.addCounter()}>Add Counter</button>}
+      </Fragment>
+    )
   }
 
   addCounter() {
     const { values } = this.state
 
     this.setState({ isLoading: true })
-    retrieveInitialValue(values.length).then((value) => {
-      this.setState({ values: _.concat(values, value) })
-    }).catch((e) => {
-      alert(e)
-    }).finally(() => {
-      this.setState({ isLoading: false })
-    })
+    retrieveInitialValue(values.length)
+      .then((value) => {
+        this.setState({ values: _.concat(values, value) })
+      })
+      .catch((e) => {
+        window.alert(e)
+      })
+      .finally(() => {
+        this.setState({ isLoading: false })
+      })
   }
 }

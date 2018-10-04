@@ -8,7 +8,7 @@ function request(url) {
       response.on('end', () => resolve(data))
     })
   })
-} 
+}
 
 export default function retrieveInitialValue(index) {
   return new Promise((resolve, reject) => {

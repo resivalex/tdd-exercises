@@ -3,7 +3,7 @@ import { configure, shallow } from 'enzyme'
 import Counter from '../src/Counter'
 import Adapter from 'enzyme-adapter-react-16'
 import _ from 'lodash'
- 
+
 configure({ adapter: new Adapter() })
 
 test('Counter accepts initial value', () => {
