@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import Counter from './Counter'
 
-export default class App extends Component {
+export default class Counter extends Component {
   constructor(props) {
     super(props)
+
     this.state = { value: this.props.initial || 0 }
   }
 

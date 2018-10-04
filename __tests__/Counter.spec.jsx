@@ -1,9 +1,9 @@
 import React from 'react'
 import { configure, shallow } from 'enzyme'
-import Counter from '../src/Counter.jsx'
-import Adapter from 'enzyme-adapter-react-16';
+import Counter from '../src/Counter'
+import Adapter from 'enzyme-adapter-react-16'
  
-configure({ adapter: new Adapter() });
+configure({ adapter: new Adapter() })
 
 test('Counter accepts initial value', () => {
   const wrapper = shallow(<Counter initial={123} />)
