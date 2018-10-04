@@ -1,9 +1,6 @@
 {
-  "plugins": [
-    "@babel/proposal-class-properties"
-  ],
   "presets": [
-    "@babel/env",
-    "@babel/react"
+    "env",
+    "react"
   ]
 }
